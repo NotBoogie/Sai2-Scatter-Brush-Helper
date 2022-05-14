@@ -18,13 +18,17 @@ namespace Sai2_Scatter_Brush_Helper
 
             string[] fakeArgs = { @".\Resources\TestImage.png" };
 
+            StaticSettingsS2SBH.LoadSettings();
+
             if (args.Length == 0)
             {
                 Console.WriteLine("No files given. Drag bmp brush files into app to go");
+                //Open the scatter brush folder for easy access
+                System.Diagnostics.Process.Start(StaticSettingsS2SBH.Sai2ScatterBrushFolderLocation);
                 return;
             }
 
-            StaticSettingsS2SBH.LoadSettings();
+            
 
             foreach (var item in args)
             {
