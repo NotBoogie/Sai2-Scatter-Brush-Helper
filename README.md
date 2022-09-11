@@ -20,7 +20,7 @@
 ## Usage
 
 Simply drop your  `.bmp`  file onto the executable to <br>
-have a brush  `.ini`  file be created in the Sai folder.
+have a brush  `.ini`  be created in your Sai folder.
 
 <br>
 
